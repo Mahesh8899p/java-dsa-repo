@@ -1,0 +1,23 @@
+3,2,4
+i
+
+target = 6
+num = 6-3 = 3
+right now HashMap empty {}
+is num 3 in hashmap -> no -> add 3 and its index -> {3->0}
+                                                   value index
+3,2,4
+  i
+
+target = 6
+num = 6-3=3
+right now HashMap has {3->0} (value->index)
+is 2 in HashMap -> searching for value 2 -> no -> hence add 2 in the HashMap -> {3->0,2->1}
+
+3,2,4
+    i
+target = 6
+num = 6-4 = 2
+right now HashMap has  {3->0,2->1}(value->index)
+is 2 in the HashMap -> searching for the value 2 -> yes found 2 -> hence dont add -> given combination found
+
