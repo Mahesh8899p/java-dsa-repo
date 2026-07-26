@@ -10,7 +10,7 @@ public class q23 {
             for(int j =1;j<=patternSize;j++){
                 
                  System.out.print(counter+" ");
-                 counter--;
+                 counter--; 
             }
             System.out.println();
             patternSize++;
