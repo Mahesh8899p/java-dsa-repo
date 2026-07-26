@@ -26,7 +26,7 @@ public class sort012array {
                 mid++;
             }
             else{
-
+                //in the 
                 swap(nums, mid,high);
                 high--;
             }
