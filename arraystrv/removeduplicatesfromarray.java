@@ -1,5 +1,13 @@
 package arrayeasy;
 import java.util.HashSet;
+
+/*
+Approach:
+- Use a set to store unique values while iterating through the array.
+- The set automatically removes duplicates.
+- Return or process only the unique values.
+*/
+
 public class removeduplicatesfromarray{
     public static void main(String[] args){
 

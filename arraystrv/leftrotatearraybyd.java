@@ -1,5 +1,12 @@
 package arrayeasy;
 
+/*
+Approach:
+- Reduce the rotation count using d % n.
+- Rotate the array left by that many positions.
+- Use a temporary array or index-based logic to place elements in the correct order.
+*/
+
 public class leftrotatearraybyd {
     //brute approach
     //here d is the number of the time we wanna rotate the array

@@ -1,5 +1,12 @@
 package arrayeasy;
-//kadane algorithm
+
+/*
+Approach:
+- Use Kadane's algorithm.
+- Keep a running sum and update it by choosing the better of current element and current sum + element.
+- Track the maximum subarray sum seen so far.
+*/
+
 public class maximumsubarraysum {
     public int maxSubArray(int[] nums) {
         int sum = 0;

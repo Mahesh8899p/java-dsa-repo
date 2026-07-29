@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/*
+Approach:
+- Use Boyer-Moore voting logic to find candidates.
+- Count the occurrences of those candidates.
+- Return all values that appear more than n/3 times.
+*/
+
 public class majorityelement2 {
     public List<Integer> majorityElement(int[] nums) {
         

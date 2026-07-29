@@ -1,5 +1,12 @@
 package arrayeasy;
 
+/*
+Approach:
+- Store the first element.
+- Shift all remaining elements one position to the left.
+- Place the stored first element at the end.
+*/
+
 public class leftrotatearrayby1 {
     /*
      approach

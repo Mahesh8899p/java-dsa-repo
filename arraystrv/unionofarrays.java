@@ -1,6 +1,12 @@
 package arrayeasy;
 import java.util.ArrayList;
 
+/*
+Approach:
+- Merge the two arrays and store unique values in a list.
+- Return the combined unique elements.
+*/
+
 public class unionofarrays {
     public int[] unionArray(int[] nums1, int[] nums2){
          

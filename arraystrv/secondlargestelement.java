@@ -1,5 +1,12 @@
 package arrayeasy;
 
+/*
+Approach:
+- Track the largest and second-largest values while scanning the array.
+- Update them according to the current element.
+- Return the second-largest value at the end.
+*/
+
 public class secondlargestelement {
     public int secondLargestElement(int[] nums){
         //brute force

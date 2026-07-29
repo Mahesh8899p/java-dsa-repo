@@ -1,6 +1,13 @@
 package arrayeasy;
 import java.util.HashMap;
 
+/*
+Approach:
+- Keep track of the maximum and minimum product ending at the current index.
+- Update them while iterating through the array.
+- The maximum product so far is the best among these values.
+*/
+
 public class maximumsubarrayproduct{
 
     public static int maxProdut1(int[] nums){

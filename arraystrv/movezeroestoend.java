@@ -1,5 +1,12 @@
 package arrayeasy;
 
+/*
+Approach:
+- Keep a pointer for the next non-zero position.
+- Traverse the array and place non-zero values in order.
+- Fill the remaining positions with zeros.
+*/
+
 public class movezeroestoend {
     
 

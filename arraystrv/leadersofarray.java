@@ -3,6 +3,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 
+/*
+Approach:
+- Traverse the array from right to left.
+- Maintain the maximum value seen so far.
+- Add the current value to the result when it is greater than the maximum seen so far.
+*/
+
 public class leadersofarray{
     //[1, 2, 5, 3, 1, 2]
     public static List<Integer> displayleaders(int[] nums){

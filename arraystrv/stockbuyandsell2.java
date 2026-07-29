@@ -1,5 +1,10 @@
 package arrayeasy;
 
+/*
+Approach:
+- Traverse the array and add the profit whenever the current price is greater than the previous one.
+- This gives the maximum profit for multiple transactions.
+*/
 
 public class stockbuyandsell2 {
     public static int Stockbuyandsell2(int[] nums){

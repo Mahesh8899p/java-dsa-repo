@@ -1,5 +1,12 @@
 package arrayeasy;
 
+/*
+Approach:
+- Track the minimum price seen so far.
+- For each later price, calculate the profit if sold now.
+- Keep the maximum profit found.
+*/
+
 public class stockbuyandsell {
     public static int stockbuyandsell1(int[] nums){
         //best buy

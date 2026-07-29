@@ -1,5 +1,11 @@
 package arrayeasy;
 
+/*
+Approach:
+- Count how many 0s, 1s, and 2s are present.
+- Rewrite the array in sorted order using those counts.
+*/
+
 public class sort012array {
     public static void main(String[] args){
 

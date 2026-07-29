@@ -1,5 +1,12 @@
 package arrayeasy;
 
+/*
+Approach:
+- Traverse the array and keep a count of consecutive ones.
+- Reset the count when a zero is found.
+- Track the maximum count seen.
+*/
+
 public class maximumconsecutiveones {
      public int findMaxConsecutiveOnes(int[] nums) {
         int count = 0;

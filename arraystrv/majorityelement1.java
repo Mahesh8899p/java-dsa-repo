@@ -2,6 +2,13 @@ package arrayeasy;
 
 import java.util.HashMap;
 
+/*
+Approach:
+- Count the frequency of each number using a HashMap.
+- Check which number appears more than half the time.
+- Return that number.
+*/
+
 public class majorityelement1 {
     public int majorityElement(int[] nums) {
         HashMap<Integer,Integer> map = new HashMap<>();

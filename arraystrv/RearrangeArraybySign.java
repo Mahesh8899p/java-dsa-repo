@@ -1,3 +1,9 @@
+/*
+Approach:
+- Place positive and negative numbers into separate positions.
+- Fill the result array by alternating between them.
+*/
+
 public class RearrangeArrayElementsbySign{
 
 	public static void main(String[] args){

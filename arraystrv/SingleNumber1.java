@@ -1,6 +1,12 @@
 package arrayeasy;
 import java.util.HashMap;
 
+/*
+Approach:
+- Count the frequency of each number using a HashMap.
+- The number that appears once is the answer.
+*/
+
 public class SingleNumber1 {
     //Given an array of nums of n integers. 
     // Every integer in the array appears twice except one integer.

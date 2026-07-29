@@ -1,6 +1,13 @@
 package arrayeasy;
 import java.util.HashMap;
 
+/*
+Approach:
+- Use prefix sums to track cumulative sum while iterating.
+- Store the first index where each prefix sum appears.
+- For each index, find the needed previous prefix sum to get the target subarray sum.
+*/
+
 public class longestsubarraywithsumk{
 
 	public static int longestSubarray(int[] nums, int k){
