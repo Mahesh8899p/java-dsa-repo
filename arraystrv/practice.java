@@ -8,8 +8,21 @@ Approach:
 */
 
 public class practice {
-    public static void main(String[] args) {
-       System.out.println("hello world");
+    public static int display(int[] nums){
+        int n = nums.length;
+        int sum = 0;
+        int maximum = 0;
+        for(int i = 0;i<n;i++){
+            sum+=nums[i];
+
+            if(sum > maximum){
+            maximum = sum;
+           }
+            if(sum < 0){
+                sum = 0;
+            }
+        }
+        return maximum;
     }
 }
 

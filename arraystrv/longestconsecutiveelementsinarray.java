@@ -23,7 +23,7 @@ public class longestconsecutiveelementsinarray{
                 int num = x;
                 int length = 0;
                 while(set.contains(num+1)){
-                    length++;
+                    length++;//its not complete
                 }
                 
             }
