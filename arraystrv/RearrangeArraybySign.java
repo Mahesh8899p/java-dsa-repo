@@ -9,7 +9,6 @@ public class RearrangeArrayElementsbySign{
 	public static void main(String[] args){
 
 	}
-
 	public int[] rearrangeArray(int[] nums){
 		int n = nums.length;
 		int posIndex = 0;

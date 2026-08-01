@@ -14,7 +14,6 @@ public class stockbuyandsell2 {
             if(nums[i+1] > nums[i]){
                 maximumprofit += nums[i+1] - nums[i];
             }
-
         }
         return maximumprofit;
     }

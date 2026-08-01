@@ -26,7 +26,7 @@ public class leftrotatearrayby1 {
         int temp = nums[0];
         int n = nums.length;
         for(int i =1;i<nums.length;i++){
-            nums[i] = nums[i-1];
+            nums[i-1] = nums[i];
         }
         nums[n-1] = temp;
 

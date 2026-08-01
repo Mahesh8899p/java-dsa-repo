@@ -27,7 +27,14 @@ public class removeduplicatesfromarray{
     //}
 
 
-
+    /* 
+    [0, 0, 3, 3, 5, 6]
+     i     j
+    [0, 3, 3, 3, 5, 6]
+           i     j
+    [0, 3, 5, 3, 5, 6]
+              i     j
+    */
     //optimal approach - two pointers
     //put first pointer as i = 0
     //put second pointer as j =1

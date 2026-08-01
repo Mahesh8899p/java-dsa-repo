@@ -1,5 +1,7 @@
 package arrayeasy;
 import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
 
 /*
 Approach:
@@ -8,21 +10,16 @@ Approach:
 */
 
 public class practice {
-    public static int display(int[] nums){
-        int n = nums.length;
-        int sum = 0;
-        int maximum = 0;
-        for(int i = 0;i<n;i++){
-            sum+=nums[i];
 
-            if(sum > maximum){
-            maximum = sum;
-           }
-            if(sum < 0){
-                sum = 0;
-            }
+
+    public void rotateArrayByOne(int[] nums) {
+        int firstelement = nums[0];
+        int n = nums.length;
+        for(int i = 1;i<n;i++){
+            nums[i-1] = nums[i];
         }
-        return maximum;
+
+        nums[n-1] = firstelement;
     }
 }
 
