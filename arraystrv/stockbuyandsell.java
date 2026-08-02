@@ -8,12 +8,13 @@ Approach:
 */
 
 public class stockbuyandsell {
-    public static int stockbuyandsell1(int[] nums){
+    public static int stockbuyandsell1(int[] nums, int n){
         //best buy
         //maximumprofit
         //selling price -> arr[i] iteration throught the array
         int bestbuy = nums[0];
         int maximumprofit = 0;
+        n = nums.length;
         for(int i =0;i<=n;i++){
             if(nums[i] - bestbuy > maximumprofit){
                 maximumprofit = nums[i] - bestbuy;
