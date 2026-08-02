@@ -1,4 +1,4 @@
-package arrayeasy;
+package arraystrv;
 import java.util.HashMap;
 
 /*
@@ -23,8 +23,12 @@ public class longestsubarraywithsumk{
 			if(prefixsum[j] == k){
 				result++;
 			}
-			else if(!map.containsKey(prefixsum[j])){
-				map.getOrDefault(prefixsum,0)+1;
+			int val = prefixsum[j] - k;
+			if(map.containsKey(val)){
+				result+=map.get(val);
+			}
+			if(!map.containsKey(val)){
+				map.put(prefixsum[j],0);
 			}
 
 		}

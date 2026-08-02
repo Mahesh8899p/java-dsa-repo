@@ -1,4 +1,4 @@
-package arrayeasy;
+package arraystrv;
 
 /*
 Approach:

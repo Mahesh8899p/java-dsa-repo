@@ -1,5 +1,4 @@
-package arrayeasy;
-import java.util.HashMap;
+package arraystrv;
 
 /*
 Approach:

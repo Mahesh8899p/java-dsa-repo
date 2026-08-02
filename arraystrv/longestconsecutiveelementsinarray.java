@@ -11,6 +11,7 @@ Approach:
 
 public class longestconsecutiveelementsinarray{
     public int longestConsecutive(int[] nums){
+        HashSet set = new HashSet<>();
         int result = 0;
         int n = nums.length;
         for(int i =0;i<n;i++){
@@ -28,6 +29,7 @@ public class longestconsecutiveelementsinarray{
                 
             }
         }
+        return result;
     }
-    return result;
+    
 }
