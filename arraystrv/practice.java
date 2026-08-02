@@ -1,7 +1,4 @@
 package arraystrv;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.List;
 
 /*
 Approach:
@@ -10,10 +7,7 @@ Approach:
 */
 
 public class practice {
-    public static int twosum(int[] nums, int target){
-        HashMap<Integer,Integer> map = new HashMap<>();
-        
-    }
+   public static 
 }
 
 
