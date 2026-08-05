@@ -1,0 +1,34 @@
+Basic Level
+Print each character of a string, one per line, using a loop and charAt().
+Count vowels in a string.
+Count consonants in a string.
+Count digits/spaces/special characters in a string.
+Reverse a string manually (build a new string by iterating from the end).
+Check if a string is a palindrome (compare characters from both ends).
+Count occurrences of a specific character (e.g., how many times 'a' appears).
+Convert lowercase to uppercase and vice versa manually (using ASCII math with charAt()).
+Find the first non-repeating character in a string.
+Count total number of words (count spaces + 1, handling edge cases).
+
+
+++++++++++++++++++++++
+Medium Level
+Check if two strings are anagrams (without sorting — use a frequency count array of size 26).
+Remove all occurrences of a given character from a string (build new string).
+Find the frequency of each character in a string and print it (like a manual "character histogram").
+Check if a string contains only digits / only alphabets.
+Toggle case of every character (a→A, A→a) manually.
+Find the longest word in a sentence (track word boundaries using spaces).
+Count how many times each word appears — tricky without split(), good practice for manual parsing.
+Check if a string is a rotation of another string (e.g., "abcd" and "cdab") — build it manually char by char.
+Find duplicate characters in a string and print them.
+Compress a string like "aaabbc" → "a3b2c1" (basic run-length encoding).
+Check if a string has all unique characters (no repeats), using a boolean/int array of size 256.
+Print the string in a "diamond" or triangle pattern based on character positions (good for nested loop + charAt practice).
+Find the second most frequent character in a string.
+Check if two strings are one edit apart (insert/remove/replace one char) — a nice step toward edit-distance problems.
+Convert a string number into an integer manually (like implementing Integer.parseInt() using charAt() and ASCII math).
+A few tips as you work through these:
+Get comfortable with the ASCII trick: char - '0' gives you the digit value, and char - 'a' gives you a 0-25 index for lowercase letters (handy for frequency arrays).
+Many "medium" ones here (anagram check, unique characters, character frequency) reuse the same core pattern: an array of size 26 (or 256) as a counter, which is one of the most useful techniques in string problems.
+Try solving each one first with a brute-force double loop, then think about whether a single pass with an array can do it faster.
