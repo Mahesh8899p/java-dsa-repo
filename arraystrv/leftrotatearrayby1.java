@@ -22,7 +22,7 @@ public class leftrotatearrayby1 {
     arr[n-1] = temp;    
     */
 
-    public void rotateArrayByOne(int[] nums){
+    public void leftrotateArrayByOne(int[] nums){
         int temp = nums[0];
         int n = nums.length;
         for(int i =1;i<nums.length;i++){
