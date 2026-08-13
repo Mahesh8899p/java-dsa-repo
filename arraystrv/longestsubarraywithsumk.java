@@ -18,6 +18,7 @@ public class longestsubarraywithsumk{
 			prefixsum[i] = prefixsum[i-1] + nums[i];
 		}
 		HashMap<Integer,Integer> map= new HashMap<>();
+		map.put(0,-1); //it handles the subarray starting from index 0
 		int result = 0;
 		for(int j = 0;j<=n;j++){
 			if(prefixsum[j] == k){
@@ -27,9 +28,7 @@ public class longestsubarraywithsumk{
 			if(map.containsKey(val)){
 				result+=map.get(val);
 			}
-			if(!map.containsKey(val)){
-				map.put(prefixsum[j],0);
-			}
+			map.put(prefixsum[j],map.getOrDefault(prefixsum[j],0)+1);
 
 		}
 		return result;
