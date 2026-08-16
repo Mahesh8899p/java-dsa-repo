@@ -1,6 +1,6 @@
 package arraystrv;
 import java.util.HashMap;
-public class practice{
+public class numberofsubarraywithxork{
 
    public static int subarraysWithXOR(int[] nums,int k){
       /*
@@ -55,8 +55,9 @@ public class practice{
 
          map.put(xor,map.getOrDefault(xor,0)+1);
       }
-      
+
       return count;
+   
    }
 }
 
