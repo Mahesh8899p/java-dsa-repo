@@ -1,18 +1,6 @@
 package arraystrv;
 import java.util.HashMap;
-public class practice{
-      public void setZeroes(int[][]matrix){
-         //setting the outside columns as zero
-         int n = matrix.length;
-         for(int i = 0;i<matrix.length;i++){
-            for(int j = 0; j<matrix[0].length;j++){
-               if(matrix[i][j] == 0){
-                    matrix[i][0] = 0;
-                    matrix[0][j] = 0;
-               }
-            }
-         }
-      }
+public class numberofsubarraywithxork{
 
    public static int subarraysWithXOR(int[] nums,int k){
       /*
@@ -67,8 +55,9 @@ public class practice{
 
          map.put(xor,map.getOrDefault(xor,0)+1);
       }
-      
+
       return count;
+   
    }
 }
 
