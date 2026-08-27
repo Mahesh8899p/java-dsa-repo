@@ -20,6 +20,6 @@ public class maximumconsecutiveones {
                 count = 0;
             }
         }
-        return count;
+        return max;
     }
 }

@@ -50,8 +50,9 @@ public class secondlargestelement {
                 secondlargest = nums[i];
             }
 
-            return secondlargest;
+            
         }
+        return secondlargest;
 
     
     }
