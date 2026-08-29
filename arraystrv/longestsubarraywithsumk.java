@@ -1,39 +1,29 @@
 package arraystrv;
 import java.util.HashMap;
 
-/*
-Approach:
-- Use prefix sums to track cumulative sum while iterating.
-- Store the first index where each prefix sum appears.
-- For each index, find the needed previous prefix sum to get the target subarray sum.
-*/
 
 public class longestsubarraywithsumk{
-
-	public static int longestSubarray(int[] nums, int k){
-		int n = nums.length;
+    public static int longestSubarray(int[] nums, int k){
+        int n = nums.length;
         int[] prefixsum = new int[n];
         prefixsum[0] = nums[0];
-        //calculating the prefix sum arrays
-        for (int i = 1; i < n; i++) {
-            prefixsum[i] = prefixsum[i - 1] + nums[i];
+        for(int i = 1;i<n;i++){
+            prefixsum[i] = prefixsum[i-1] + nums[i];
         }
-
-        HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(0, 1); // handles subarrays starting from index 0
 
         int result = 0;
-        for (int j = 0; j < n; j++) {
-            int val = prefixsum[j] - k;
-            if(map.containsKey(val)){
-                result += map.get(val);
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for(int i =0;i<n;i++){
+            if(prefixsum[i] == k){
+                Math.max(result,i+1);
             }
-            map.put(prefixsum[j], map.getOrDefault(prefixsum[j], 0) + 1);
+            int val = k - prefixsum[i];
+
+            if(map.containsKey(val)){
+                Math.max(result,i-map.get(val));
+            }
+
+            map.put(prefixsum[i],i);
         }
-        return result;
-	}
-
-	public static void main(String[] args){
-
-	}
+}
 }
