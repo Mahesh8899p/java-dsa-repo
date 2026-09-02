@@ -1,6 +1,7 @@
 package arraystrv;
-public class practice{
-     public static long[] findMissingRepeatingNumbers(int[] nums){
+
+public class findmisingrepeatingnumber {
+    public static long[] findMissingRepeatingNumbers(int[] nums){
           /*
           [3,5,4,1,1]
           output - [1,2]
@@ -77,7 +78,5 @@ public class practice{
      }
 
      
-     }
-
-
-
+     
+}
