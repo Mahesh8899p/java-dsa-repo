@@ -46,8 +46,8 @@ public class findmisingrepeatingnumber {
           //sum - naturalsum
           //sum^2 - naturalsum^2
           int n = nums.length;
-          long s = n*(n+1)/2;
-          long sn = (n*(n+1)) * (2*n+1)/6;
+          long s = (long)n*(n+1)/2;
+          long sn = (long)(n*(n+1)) * (2*n+1)/6;
           long sum1 = 0;
           long sum2 = 0;
           for(int i =0;i<n;i++){
