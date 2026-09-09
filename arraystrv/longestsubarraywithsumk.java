@@ -25,5 +25,6 @@ public class longestsubarraywithsumk{
 
             map.put(prefixsum[i],i);
         }
+        return result;
 }
 }
