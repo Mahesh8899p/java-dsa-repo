@@ -1,8 +1,10 @@
-     package arraystrv;
-     import java.util.HashMap;
+package arraystrv;
+import java.util.HashMap;
 
-     public class practice{
-            public static int maxlen(int[] nums){
+
+
+public class largestsubarraywithsum0{
+     public static int maxlen(int[] nums){
                 int result = 0;
                 int n = nums.length;
                 int[] prefixsum = new int[n];
@@ -28,20 +30,4 @@
 
                 return result;
             }
-          
-          public static void main(String[] args){
-               
-          }
-     }
-     
-          
-     
-
-
-          
-
-          
-          
-
-
-
+}
