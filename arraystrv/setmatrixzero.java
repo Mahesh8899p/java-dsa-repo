@@ -16,7 +16,7 @@ public class setmatrixzero{
                         firstcol = true;
                     }
                     matrix[i][0] = 0;
-                    matrix[0][i] = 0;
+                    matrix[0][j] = 0;
                 }
             }
         }
@@ -28,8 +28,6 @@ public class setmatrixzero{
                 }
             }
         }
-        
-
         //replace the remaining blocks
         if(firstrow == true){
             for(int j =0;j<matrix[0].length;j++){
@@ -43,7 +41,5 @@ public class setmatrixzero{
                 matrix[i][0] = 0;
             }
         }
-
-
     }
 }

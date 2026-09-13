@@ -15,15 +15,17 @@ public class longestsubarraywithsumk{
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int i =0;i<n;i++){
             if(prefixsum[i] == k){
-                Math.max(result,i+1);
+                result = Math.max(result,i+1);
             }
-            int val = k - prefixsum[i];
+            int val = prefixsum[i] - k;
 
             if(map.containsKey(val)){
-                Math.max(result,i-map.get(val));
+                result = Math.max(result,i-map.get(val));
             }
-
-            map.put(prefixsum[i],i);
+            
+            if(!map.containsKey(prefixsum[i])){
+                map.put(prefixsum[i],i);
+            }
         }
         return result;
 }

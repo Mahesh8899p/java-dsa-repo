@@ -3,19 +3,32 @@ package arraystrv.binarysearch;
 public class BSLowerBound{
     public static int lowerBound(int[] nums, int x){
         /*
-        the condition of lower bound is arr[idx] > x
+        the condition of lower bound is arr[idx] >= x
+        */
+
+
+        /*
+        dry run.           target = 4
+        [2,4,4,7,9,11]
+        low        high
+             mid
+
+        mid = 4
+        mid >= 4 so 4>= 4
+        
+        
         */
         int n = nums.length;
         int low = 0;
         int high = n - 1;
-        int ans = 0;
+        int ans = n;
         while(low <= high){
-            int mid = low + high / 2;
-            if(nums[mid] >= x){
+            int mid = low + (high-low) / 2;
+            if(nums[mid] >= x){ 
                 ans = mid;
                 high = mid - 1;
             }
-            else{
+            else{ 
                 low = mid + 1;
             }
         }

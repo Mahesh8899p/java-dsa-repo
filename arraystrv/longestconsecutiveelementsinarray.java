@@ -22,10 +22,12 @@ public class longestconsecutiveelementsinarray{
             //set.contains(x-1) checks if its the first element or not (if its the first element then we will start counting the sequence)
             if (!set.contains(x-1)){
                 int num = x;
-                int length = 0;
+                int length = 1;
                 while(set.contains(num+1)){
                     length++;//its not complete
+                    num++;
                 }
+                Math.max(result,length);
                 
             }
         }

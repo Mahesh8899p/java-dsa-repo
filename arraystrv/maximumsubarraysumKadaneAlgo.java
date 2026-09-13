@@ -7,7 +7,7 @@ Approach:
 - Track the maximum subarray sum seen so far.
 */
 
-public class maximumsubarraysum {
+public class maximumsubarraysumKadaneAlgo {
     public int maxSubArray(int[] nums) {
         int sum = 0;
         int maximum = Integer.MIN_VALUE;

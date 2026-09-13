@@ -1,45 +1,45 @@
-package arraystrv;
-import java.util.HashMap;
+     package arraystrv;
+     import java.util.HashMap;
 
-public class practice{
-      public int longestSubarray(int[] nums, int k){
-          //[10,5,2,7,1,9]
+     public class practice{
+            public static int maxlen(int[] nums){
+                int result = 0;
+                int n = nums.length;
+                int[] prefixsum = new int[n];
+                prefixsum[0] = nums[0];
+                for(int i = 1;i<n;i++){
+                    prefixsum[i] = prefixsum[i-1] + nums[i];
+                }
+                HashMap<Integer,Integer> map = new HashMap<>();
+                for(int i=0;i<n;i++){
+                    if(prefixsum[i] == 0){
+                        result =  Math.max(result,i+1);
+                    }
 
-          //prefix sum = [10,15,17,24,25,34]
-          //k =15
-          int n = nums.length;
-          int[] prefixsum = new int[n];
-          prefixsum[0] = nums[0];
-          for(int i =1;i<n;i++){
-               prefixsum[i] = prefixsum[i-1] + nums[i];
-          }
-          int count = 0;
+                    int val = prefixsum[i];
+                    if(map.containsKey(val)){
+                         result = Math.max(result,i - map.get(val));
+                    }
 
-          HashMap<Integer,Integer> map = new HashMap<>();
+                    map.put(nums[i],i);
+                }
+
+                return result;
+            }
           
-          for(int i=0;i<n;i++){
-               int val = nums[i] - k;
-               if(nums[i] == k){
-                     Math.max(count, i+1);
-               }
-
-               if(map.containsKey(val)){
-                    
-               }
-
-
-
+          public static void main(String[] args){
+               
           }
-
-      }
      }
-    
-
-
+     
+          
      
 
-     
-     
+
+          
+
+          
+          
 
 
 
