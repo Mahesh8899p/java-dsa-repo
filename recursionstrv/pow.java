@@ -1,8 +1,6 @@
 package recursionstrv;
 
 public class pow{
-    
-
         public double myPow(double x, long n){
             long N = n;  //prevents overflowing
             if(N < 0){
@@ -13,8 +11,6 @@ public class pow{
             return helper(x,N);
 
         }
-
-        
         public double helper(double x, long n){
             if(n == 0){
                 return 1;
