@@ -15,7 +15,7 @@ class Node{
     }
 }
 
-public class insertionatend{
+public class insertionattail{
     public static Node insertionatend(Node head, int val){
 
         if(head == null){

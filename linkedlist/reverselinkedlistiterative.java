@@ -13,21 +13,20 @@ class Node{
     }
 }
 
-public class reverselinkedlist{
-
-    public static Node reverseLinkedList(Node head){
+public class reverselinkedlistiterative{
+    public static Node reverselinkedlist(Node head){
         Node temp = head;
         Node prev = null;
-        while(temp != null){
-            Node front = temp.next;
-            temp.next = prev;
-            prev = temp;
-            temp = front;
-        }
-        return head;
+    while(temp != null){
+        Node front = temp.next;
+        temp.next = prev;
+        temp = front;
+        prev = temp;
+    }
+    return head;
+    }
     }
 
     public static void main(String[] args){
 
     }
-}
