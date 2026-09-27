@@ -17,6 +17,10 @@ class Node{
 
 public class sort012LinkedList{
     public Node sortList(Node head){
+        if(head == null || head.next == null){
+            return null;
+        }
+
         Node ZeroHead = new Node(-1);
         Node OneHead = new Node(-1);
         Node TwoHead = new Node(-1);
@@ -43,6 +47,8 @@ public class sort012LinkedList{
                 two.next = temp;
                 two = two.next;
             }
+
+            temp = temp.next;
         }
     }
 }
