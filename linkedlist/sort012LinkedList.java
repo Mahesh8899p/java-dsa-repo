@@ -36,6 +36,12 @@ public class sort012LinkedList{
 
             else if(temp.data == 1){
                 one.next = temp;
+                one = one.next;
+            }
+
+            else{
+                two.next = temp;
+                two = two.next;
             }
         }
     }

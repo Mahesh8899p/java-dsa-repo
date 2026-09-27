@@ -83,13 +83,62 @@ public class practice{
         return head;
     }
 
-    public static Node insertionatk(Node head, int val, int k){
-        if(head == null || head.next == null){
-            return head;
+    public static Node AddtwoNumbersInLinkedList(Node head1, Node head2){
+        Node temp1 = head1;
+        Node temp2 = head2;
+        int carry = 0;
+        Node tempNode = new Node(-1);
+        Node current = tempNode;
 
+        while(temp1 != null || temp2 !=null){
+
+            int sum = carry;
+
+             if(temp1 != null){
+                sum+= temp1.data;
+                temp1 = temp1.next;
+             }
+
+             if(temp2 != null){
+                sum+=temp2.data;
+                temp2 = temp2.next;
+             }
+
+             carry = sum/10;
+
+
+             Node newNode = new Node(sum%10);
+             current.next = newNode;
+             current = current.next;
         }
-        if(k == 1){
-            
-        }
+
+        return head1;
     }
+
+    public static Node segregateoddevenNodesLinkedList(Node head){
+        Node even = head;
+        Node odd = head.next;
+        Node evenhead = even;
+
+        while(even != null && even.next != null){
+            odd.next = odd.next.next;
+            even.next = even.next.next;
+        }
+
+        odd = odd.next;
+        even = even.next;
+
+        odd.next = evenhead;
+
+        return head;
+    }
+
+
+    public static Node sortlinkedlist(Node head){
+        
+    }
+
+    
+
+
 }
